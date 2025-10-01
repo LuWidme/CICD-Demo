@@ -49,23 +49,6 @@ jobs:
           password: ${{ secrets.REMOTE_PASSWORD }}
           port: '2222'
           script: ./run.sh
-#
-#  build-gradle:
-#    needs: [ say-hello,remote-say-hello ]
-#    runs-on: ubuntu-latest
-#    steps:
-#    - name: Checkout sources
-#      uses: actions/checkout@v4
-#    - name: Setup Java
-#      uses: actions/setup-java@v4
-#      with:
-#        distribution: 'temurin'
-#        java-version: 18
-#    - name: Setup Gradle
-#      uses: gradle/actions/setup-gradle@v4
-#    - name: Build with Gradle
-#      run: ./gradlew build
-#
 
 
   build-docker:
